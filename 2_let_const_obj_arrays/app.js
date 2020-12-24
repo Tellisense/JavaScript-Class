@@ -70,6 +70,8 @@ greeting = "Hi Justin";
 // reference Types:  (if reassign, same location in memory hence reference type)
 // Object
 // Array
+//functions
+//Date()
 
 let test;
 
@@ -97,6 +99,9 @@ const car = {
     return "Yes I can drive";
   }, //method
 };
+
+//Map
+const myMap = new Map();
 
 console.log(car);
 
