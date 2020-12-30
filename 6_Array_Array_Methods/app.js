@@ -14,12 +14,7 @@ const mixed = [
   [1, 2, 3],
   new Date(),
 ];
-Object.defineProperty(console, "_commandLineAPI", {
-  get: function () {
-    throw "Nooo!";
-  },
-});
-// console.log(`The array has: `, numbers.length);
+
 
 let val;
 val = mixed.length;
