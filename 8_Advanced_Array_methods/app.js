@@ -30,11 +30,11 @@ const lottery = digits => {
 
 // number between 0-99
 
-console.log("lottery 6", lottery(6));
+console.log("lottery 6: ", lottery(6));
 
 //  [3, 17, 45, 32, 55, 66]
 
-console.log("lottery 3", lottery(3));
+console.log("lottery 3: ", lottery(3));
 
 //  [32, 33, 2]
 
@@ -49,6 +49,9 @@ reverseArray(["a", "b", "c"]); //["c", "b", "a"]
 const reverseStr = str => {
   return str.split("").reverse().join("");
 };
+
+// or
+const reverseStr = str => str.split("").reverse().join("");
 
 reverseStr("god"); //"dog"
 reverseStr("civic"); //"civic"
