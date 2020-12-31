@@ -15,9 +15,7 @@ const double = function (x = 6) {
 // console.log(double(10));
 
 // Arrow functions
-const addTen = (x, y) => {
-  return x + y;
-};
+const addTen = x => y => x + y;
 
 console.log(addTen(10, 10));
 
