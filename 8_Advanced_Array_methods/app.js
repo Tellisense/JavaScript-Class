@@ -56,3 +56,7 @@ const reverseStr = str => str.split("").reverse().join("");
 reverseStr("god"); //"dog"
 reverseStr("civic"); //"civic"
 reverseStr("racecar"); //"racecar"
+
+
+
+//palindrome
