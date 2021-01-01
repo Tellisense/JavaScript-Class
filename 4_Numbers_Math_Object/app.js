@@ -9,6 +9,17 @@ val = num1 * num2;
 val = num1 / num2;
 val = num1 % num2;
 
+// modulus operator
+// first number  divided by second number, return remainder
+
+20 % 5; //  0  if zero then the number is even
+11 % 2; //  1
+
+// checks to see if a number is even
+function isEven(n) {
+  return n % 2 === 0;
+}
+
 //Math Object
 val = Math.PI;
 val = Math.E;
