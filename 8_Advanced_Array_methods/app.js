@@ -72,4 +72,6 @@ val = animals.indexOf("justin"); // -1
 
 // val = animals.lastIndexOf("fish"); // 2
 
+
+
 console.log(val);
