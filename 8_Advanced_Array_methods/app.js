@@ -57,21 +57,85 @@
 // reverseStr("civic"); //"civic"
 // reverseStr("racecar"); //"racecar"
 
-const animals = ["cat", "dog", "fish", "racoon", "bear", "lion"];
+// const animals = ["cat", "dog", "fish", "racoon", "bear", "lion"];
 
-let val;
-val = animals.includes("fish"); //true
-val = animals.includes("fox"); // false
+// let val;
+// val = animals.includes("fish"); //true
+// val = animals.includes("fox"); // false
 
-val = animals.join("-");
+// val = animals.join("-");
 
-val = animals.toString();
+// val = animals.toString();
 
-val = animals.indexOf("racoon"); //  3
-val = animals.indexOf("justin"); // -1
+// val = animals.indexOf("racoon"); //  3
+// val = animals.indexOf("justin"); // -1
 
-// val = animals.lastIndexOf("fish"); // 2
+// // val = animals.lastIndexOf("fish"); // 2
 
+// console.log(val);
 
+// Array.prototype.map()
+// The map() method:  creates a new array in memory of equal size, then runs the call back function on each iteration and pushes the results into the new array and return the array.
 
-console.log(val);
+const names = ["justin", "mendel", "yehuda"];
+
+var x = ["justin", "mendel", "yehuda"].map(item => "Mr. " + item);
+
+// console.log(x);
+
+var z = [1, 2, 3];
+
+var t = [...z];
+
+t.push(5);
+
+// console.log(z);
+
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+// const addMr = arr => {
+//   return arr.map(function (item) {
+//     return "Mr. " + item;
+//   });
+// };
+
+// console.log(addMr(names));
+
+const data = [
+  {
+    title: "green labrogini",
+    seller: "cats, LLC",
+    price: 20,
+    isOnSale: false,
+  },
+  {
+    title: "yellow labrogini",
+    seller: "johnny, LLC",
+    price: 13,
+    isOnSale: false,
+  },
+  {
+    title: "blue labrogini",
+    seller: "mommyCars, LLC",
+    price: 20,
+    isOnSale: true,
+  },
+];
+
+// Filter- create a new array in memory, it runs the callback function on each iteration and will return the item if the condition is true.
+
+function myOtherFilter(arr) {
+  return arr.filter(function (item) {
+    return item.isOnSale === true;
+  });
+}
+
+const d = item => item.isOnSale === true;
+
+const myFilter = arr => arr.filter(d);
+
+console.log(myFilter(data));
+
+const men = ["justin", "mendel", "yehuda", "james", "bob"];
+
+console.log(men.find(item => item === "johnny"));

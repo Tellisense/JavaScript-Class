@@ -50,5 +50,3 @@ const justin = {
 // console.log(justin.firstName);
 // console.log(justin.isCool);
 console.log(justin.drive());
-
-
