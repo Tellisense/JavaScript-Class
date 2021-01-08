@@ -67,6 +67,28 @@ greeting = "Hi Justin";
 //Symbol()
 //BigInt(435234523452345)   435234523452345n
 
+// BigInt
+// At the moment the maximum number you can store as an integer in JavaScript is pow(2, 53) - 1 . But BigInt actually allows you to go even beyond that.  Just add an "n" to the end of the number
+Number.MAX_SAFE_INTEGER;
+9007199254740991;
+var oldNumber = Number.MAX_SAFE_INTEGER;
+undefined;
+++oldNumber;
+9007199254740992;
+++oldNumber;
+9007199254740992;
+++oldNumber;
+9007199254740992;
+let newNumber = 9007199254740992n;
+
+undefined;
+++newNumber;
+9007199254740993n;
+++newNumber;
+9007199254740994n;
+++newNumber;
+9007199254740995n;
+
 // reference Types:  (if reassign, same location in memory hence reference type)
 // Object
 // Array
