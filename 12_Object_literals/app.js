@@ -97,6 +97,34 @@ val = countries.address.street.streetName.typeOf; //Dr.
 const numbers = ["a", "b", "z", "h", "u", "y", "z", "a", "i", "a", "y", "a"];
 // ! negates basically turns to the opposite value : so true will become false
 
+const paragraph =
+  "South Vietnam in 1966 Badcoe displayed conspicuous gallantry and leadership on three occasions between February and April 1967 In the final battle he was killed by a burst of machine-gun fire. He was posthumously awarded the Victoria Cross for his actions as well as the United States Silver Star and several South Vietnamese medals Badcoe's medal set is now displayed in the Hall of Valour at the Australian War Memorial in Canberra. Buildings in South Vietnam and Australia have been named after";
+
+// find the highest repeating  word in a paragraph
+const findHighestWord = str => {
+  const obj = {};
+  const arr = str.split(" ");
+  const result = {
+    number: 0,
+    word: "",
+  };
+  for (let i = 0; i < arr.length; i++) {
+    if (obj[arr[i]]) {
+      obj[arr[i]] += 1;
+      if (obj[arr[i]] > result.number) {
+        result.number = obj[arr[i]];
+        result.word = arr[i];
+        console.log("result: ", result);
+      }
+    } else {
+      obj[arr[i]] = 1;
+    }
+  }
+  return result.word;
+};
+
+console.log(findHighestWord(paragraph));
+
 // return the first repeating string
 const findFirstRepeat = arr => {
   const hashMap = {};
@@ -109,7 +137,7 @@ const findFirstRepeat = arr => {
   }
 };
 
-console.log(findFirstRepeat(numbers));
+// console.log(findFirstRepeat(numbers));
 
 // find the highest repeating character in an array
 const findHighestRepeat = arr => {
