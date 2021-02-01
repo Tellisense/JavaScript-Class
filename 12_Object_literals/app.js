@@ -14,7 +14,7 @@ const person = {
     state: "FL",
   },
   getBirthYear: function () {
-    return 2021 - this.age;
+    return 2021 - this.age - 1;
   },
 };
 
