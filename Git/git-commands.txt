@@ -16,10 +16,10 @@ $ git config --get remote.origin.url
 $ git remote set-url origin https://github.com/USERNAME/REPOSITORY.git
 
 
-create a branch 
+create a branch, use first initial + lastName / feature
 $ git checkout -b jrahimi/feature-branch
 
-pull Main branch while in your feature branch 
+pull Main branch (into feature branch) while in your feature branch 
 $ git pull origin main
 
 abort in the middle of a merge attempt if unsuccessful
@@ -65,5 +65,5 @@ git init
 git add .
 git commit -m "first commit"
 git branch -M main
-git remote add origin git@github.com:Tellisense/<REPO_NAME>.git
+git remote add origin git@github.com:<YOUR_GITHUB_USERNAME>/<REPO_NAME>.git
 git push -u origin main
