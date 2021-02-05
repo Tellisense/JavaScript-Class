@@ -35,3 +35,9 @@ val = Math.random();
 val = Math.floor(Math.random() * 99 + 1);
 
 console.log(val);
+
+i++; // i = i + 1
+
+a += 100; // a = a + 100
+
+a -= 100; // a = a - 100

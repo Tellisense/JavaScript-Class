@@ -44,3 +44,17 @@ html = `Hi the winner is : ${name}`;
 
 // myDiv.innerHTML = html;
 myDiv.innerText = html;
+
+const x = "justin";
+
+//write a function that capitalizes my name
+
+const makeUpperCase = str => {
+  const result = "";
+  str.split("").forEach(function (item) {
+    result += item.toUpperCase();
+  });
+  return result;
+};
+
+console.log(makeUpperCase(x));
