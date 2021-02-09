@@ -58,3 +58,10 @@ const makeUpperCase = str => {
 };
 
 console.log(makeUpperCase(x));
+
+
+
+result = result + item
+
+
+
