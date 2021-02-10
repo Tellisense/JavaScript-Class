@@ -19,4 +19,11 @@ const findHighestRepeating = arr => {
 };
 
 console.log(findHighestRepeating(arr));
+
+
 //  write a function that return the first repeating number
+
+
+
+const obj = {};
+obj.key1 = 1
